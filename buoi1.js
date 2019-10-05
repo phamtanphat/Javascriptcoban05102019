@@ -28,8 +28,10 @@
 // object
     // 1 - Object
     // 2 - Array
-const khoapham = {
-    name : "Khoa Pham",
-    location : "38 nguyen lam"
-}
-console.log(khoapham.name , khoapham.location)
+// const khoapham = {
+//     name : "Khoa Pham",
+//     location : "38 nguyen lam"
+// }
+// console.log(khoapham['name'], khoapham['location'])
+var animals = ['Meo','Cho','Heo','Chuot']
+console.log(animals[1])
