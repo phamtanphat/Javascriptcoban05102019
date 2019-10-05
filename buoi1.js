@@ -18,13 +18,18 @@
 //2 : Kieu du lieu 
 
 // primities :
-    1 - String
-    2 - Boolean
-    3 - Numerber
-    // special type
-    4 - null
-    5 - undefined
-    6 - symbol
+    // 1 - String
+    // 2 - Boolean
+    // 3 - Numerber
+    // // special type
+    // 4 - null
+    // 5 - undefined
+    // 6 - symbol
 // object
-    1 - Object
-    2 - Array
+    // 1 - Object
+    // 2 - Array
+const khoapham = {
+    name : "Khoa Pham",
+    location : "38 nguyen lam"
+}
+console.log(khoapham.name , khoapham.location)
