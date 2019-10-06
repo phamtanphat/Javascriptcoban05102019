@@ -43,5 +43,21 @@ var s = r * r * 3.14;
  * Yêu cầu: 
  * - Khai báo biến p là chu vi của hình tròn này.
  */
-var p = r * 2 * 3.14
-console.log(p)
+// var p = r * 2 * 3.14
+// console.log(p)
+// phep tinh tang giam
+var a = 5
+var b = 6
+
+var ketqua = ++a - ++b * --a + --b + b++ * a++ - --a
+
+//  6 - ++b * --a + --b + b++ * a++ - --a     a : 6 , b : 6
+//  6 - 7 * --a + --b + b++ * a++ - --a       a : 6 , b : 7
+//  6 - 7 *   5 + --b + b++ * a++ - --a       a : 5 , b : 7
+//  6 - 7 *   5 + 6 + b++ * a++ - --a         a : 5 , b : 6
+//  6 - 7 *   5 + 6 + 6 * a++ - --a           a : 5 , b : 7
+//  6 - 7 *   5 + 6 + 6 * 5 - --a             a : 6 , b : 7
+//  6 - 7 *   5 + 6 + 6 * 5 - 5               a : 5 , b : 7
+//  6 - 35      + 6 + 30    - 5
+//  2
+console.log(ketqua)
