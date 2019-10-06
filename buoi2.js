@@ -70,9 +70,29 @@
     // b %= 2 
     // console.log(b)
 //5 : function 
-function dientichTamGiac(a , h){
-    var s = a * h / 2
+// function dientichTamGiac(a , h){
+//     var s = a * h / 2
     // return hoac khong co return thi method tra ve gia tri undefined
-    return s
+//     return s
+// }
+// console.log(dientichTamGiac(5 , 10))
+
+
+// Bài tập: Viết hàm tính thể tích khối hộp.
+// Nhận vào các tham số như dưới, trả về thể tích của khối hộp.
+/**
+ * Tính thể tích khối hộp
+ * https://www.wikihow.com/Calculate-Volume-of-a-Box
+ * @param {Number} w Chiều rộng
+ * @param {Number} h Chiều cao
+ * @param {Number} l Chiều dài
+ * @returns {Number} Diện tích
+
+function getBoxVolume(w, h, l) {
+    var v = w * h * l
+    return v
 }
-console.log(dientichTamGiac(5 , 10))
+  
+console.log(getBoxVolume(10, 20, 30)); // 6000
+console.log(getBoxVolume(4, 5, 6)); // 120
+ */
