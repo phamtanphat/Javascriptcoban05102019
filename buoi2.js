@@ -131,29 +131,42 @@
     // console.log(rectangle.getHeight())
     // console.log(rectangle.getArea())
 // 7 : Cac phep toan so sanh
-// Gia tri bang false : null , 0 , false , undefined , ""
-// var a = 5
-// var b = '5'
-// if( a === b){
-//     console.log("true")
-// }else{
-//     console.log("false")
+    // Gia tri bang false : null , 0 , false , undefined , ""
+    // var a = 5
+    // var b = '5'
+    // if( a === b){
+    //     console.log("true")
+    // }else{
+    //     console.log("false")
+    // }
+    // Ví dụ:
+
+    // var a = [1, 2];
+    // var b = [1, 2];
+    // console.log(a == b);
+    // Chạy chương trình và tìm hiểu 
+    // vì sao kết quả lại là false mặc dù giá trị của 2 array 
+    // có vẻ giống nhau. Viết câu trả lời ở dưới đây.
+
+    //Vi du
+    // var a = 'A';
+    // var b = 'a';
+
+    // console.log(a > b);
+    // Chạy chương trình và tìm hiểu vì sao kết quả lại là 
+    //false mặc dù 1000 trông có vẻ lớn hơn 200. 
+    //Viết câu trả lời ở dưới đây.
+//8 : Vong lap
+// Ví dụ
+// var array = [1, 2, 4, 8, 16];
+// /**
+//  * Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
+//  * 16
+//  * 8
+//  * 4
+//  * 2
+//  * 1
+//  */
+// for(var i = array.length - 1 ; i > -1 ; i--){
+//     console.log(array[i])
 // }
-// Ví dụ:
-
-// var a = [1, 2];
-// var b = [1, 2];
-// console.log(a == b);
-// Chạy chương trình và tìm hiểu 
-// vì sao kết quả lại là false mặc dù giá trị của 2 array 
-// có vẻ giống nhau. Viết câu trả lời ở dưới đây.
-
-//Vi du
-// var a = 'A';
-// var b = 'a';
-
-// console.log(a > b);
-// Chạy chương trình và tìm hiểu vì sao kết quả lại là 
-//false mặc dù 1000 trông có vẻ lớn hơn 200. 
-//Viết câu trả lời ở dưới đây.
-
