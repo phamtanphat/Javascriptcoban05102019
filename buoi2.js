@@ -157,51 +157,78 @@
     //false mặc dù 1000 trông có vẻ lớn hơn 200. 
     //Viết câu trả lời ở dưới đây.
 //8 : Vong lap
-// Ví dụ
-// var array = [1, 2, 4, 8, 16];
-// /**
-//  * Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
-//  * 16
-//  * 8
-//  * 4
-//  * 2
-//  * 1
-//  */
-// for(var i = array.length - 1 ; i > -1 ; i--){
-//     console.log(array[i])
+    // Ví dụ
+    // var array = [1, 2, 4, 8, 16];
+    // /**
+    //  * Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
+    //  * 16
+    //  * 8
+    //  * 4
+    //  * 2
+    //  * 1
+    //  */
+    // for(var i = array.length - 1 ; i > -1 ; i--){
+    //     console.log(array[i])
+    // }
+    // bai tap 2
+    // Ví dụ
+    // var a = [1, 2, 3, 4, 5];
+    // var b = [10, 20, 30];
+    /**
+     * Sử dụng vòng lặp for để tính tích của các phần tử của array a với các phần tử của array b Kết quả mong muốn:
+     * 10
+     * 20
+     * 30
+     * ...
+     * 20
+     * 40
+     * 60
+     * ...
+     * Gợi ý: Dùng nested for loops (các vòng lặp lồng nhau)
+     */
+    // for(var i = 0 ; i < b.length ; i++){
+    //     for(var y = 0 ; y < a.length ; y++){
+    //         console.log(b[i] * a[y]);
+    //     }
+    // }
+    //Ví dụ 3 :
+    /**
+     * Viết function trả về tích các số từ start đến end, không tính end 
+     * Ví dụ: console.log(calculate(2, 5)) 
+     * sẽ hiển thị ra màn hình 24 (vì 2 * 3 * 4 = 24)
+     */
+    // function calculate(start, end) {
+    //     var tich = 1;
+    //     for(var i = start ; i < end ; i++){
+    //         tich *= i
+    //     }
+    //     return tich
+    // }
+    // console.log(calculate(2, 5))
+// 9 : for in , for of
+// const phat = {
+//     name : 'phat',
+//     age : 25,
+//     location : "Cu chi"
 // }
-// bai tap 2
-// Ví dụ
-var a = [1, 2, 3, 4, 5];
-var b = [10, 20, 30];
-/**
- * Sử dụng vòng lặp for để tính tích của các phần tử của array a với các phần tử của array b Kết quả mong muốn:
- * 10
- * 20
- * 30
- * ...
- * 20
- * 40
- * 60
- * ...
- * Gợi ý: Dùng nested for loops (các vòng lặp lồng nhau)
- */
-// for(var i = 0 ; i < b.length ; i++){
-//     for(var y = 0 ; y < a.length ; y++){
-//         console.log(b[i] * a[y]);
-//     }
+
+// var name = "name"
+// if(name in phat){
+//     console.log("Co")
 // }
-//Ví dụ 3 :
+// const arrayNumbers = [1,2,3,4,5,6]
+
+// for(var value of arrayNumbers){
+//     console.log(value)
+// }
+
+// Ví dụ 1
 /**
- * Viết function trả về tích các số từ start đến end, không tính end 
- * Ví dụ: console.log(calculate(2, 5)) 
- * sẽ hiển thị ra màn hình 24 (vì 2 * 3 * 4 = 24)
+ * Sử dụng vòng lặp for...of để tính tích của các phần tử trong một array gồm các số
  */
-function calculate(start, end) {
-    var tich = 1;
-    for(var i = start ; i < end ; i++){
-        tich *= i
-    }
-    return tich
+
+function multiply(arr) {
+
 }
-console.log(calculate(2, 5))
+
+console.log(multiply([2, 3, 4])); // expect: 24
