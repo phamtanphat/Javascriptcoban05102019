@@ -62,10 +62,17 @@
     //  2
     // console.log(ketqua)
 //4 : Phep gan
-var a = 5
-var b = 6
-// a = b = 8
-a *= 2
-//chia lay phan du
-b %= 2 
-console.log(b)
+    // var a = 5
+    // var b = 6
+    // a = b = 8
+    // a *= 2
+    //chia lay phan du
+    // b %= 2 
+    // console.log(b)
+//5 : function 
+function dientichTamGiac(a , h){
+    var s = a * h / 2
+    // return hoac khong co return thi method tra ve gia tri undefined
+    return s
+}
+console.log(dientichTamGiac(5 , 10))
