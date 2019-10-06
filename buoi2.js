@@ -20,10 +20,10 @@
 // var s = a * h / 2
 // console.log(s)
 //Bai tap 2 
-var width = 10;
-var height = 20;
+// var width = 10;
+// var height = 20;
 
-var s = width * height;
+// var s = width * height;
 /**
  * width: Chiều rộng của 1 hình chữ nhật
  * height: Chiều cao của hình chữ nhật
@@ -31,5 +31,17 @@ var s = width * height;
  * Yêu cầu: 
  * - Khai báo biến p là chu vi của hình chữ nhật này.
  */
-var p = (width + height) / 2
+// var p = (width + height) / 2
+// console.log(p)
+//Bai tap 3 :
+var r = 10;
+
+var s = r * r * 3.14;
+/**
+ * r: Bán kính của 1 hình tròn
+ * s: Diện tích của hình tròn đó
+ * Yêu cầu: 
+ * - Khai báo biến p là chu vi của hình tròn này.
+ */
+var p = r * 2 * 3.14
 console.log(p)
