@@ -97,36 +97,63 @@
     console.log(getBoxVolume(4, 5, 6)); // 120
     */
 //6 : Object method
-// var khoapham = {
-//     name : 'Khoa Pham',
-//     age : 35,
-//     info : function(){
-//         console.log("Ten : " + this.name + " Tuoi : " + this.age)
-//     }
+    // var khoapham = {
+    //     name : 'Khoa Pham',
+    //     age : 35,
+    //     info : function(){
+    //         console.log("Ten : " + this.name + " Tuoi : " + this.age)
+    //     }
+    // }
+    // khoapham.info()
+    /**
+     * Khai báo biến `rectangle` là 1 object gồm có các property:
+     * - width: chiều rộng, là 1 số bất kì
+     * - height: chiều cao, là 1 số bất kì
+     * Viết các method:
+     * - getWidth: trả về chiều rộng
+     * - getHeight: trả về chiều cao
+     * - getArea: trả về diện tích
+     */
+    // const rectangle = {
+    //     width : 10 ,
+    //     height : 15 ,
+    //     getWidth : function(){
+    //         return this.width
+    //     },
+    //     getHeight : function(){
+    //         return this.height
+    //     },
+    //     getArea : function(){
+    //         return this.width * this.height 
+    //     }
+    // }
+    // console.log(rectangle.getWidth())
+    // console.log(rectangle.getHeight())
+    // console.log(rectangle.getArea())
+// 7 : Cac phep toan so sanh
+// Gia tri bang false : null , 0 , false , undefined , ""
+// var a = 5
+// var b = '5'
+// if( a === b){
+//     console.log("true")
+// }else{
+//     console.log("false")
 // }
-// khoapham.info()
-/**
- * Khai báo biến `rectangle` là 1 object gồm có các property:
- * - width: chiều rộng, là 1 số bất kì
- * - height: chiều cao, là 1 số bất kì
- * Viết các method:
- * - getWidth: trả về chiều rộng
- * - getHeight: trả về chiều cao
- * - getArea: trả về diện tích
- */
-const rectangle = {
-    width : 10 ,
-    height : 15 ,
-    getWidth : function(){
-        return this.width
-    },
-    getHeight : function(){
-        return this.height
-    },
-    getArea : function(){
-        return this.width * this.height 
-    }
-}
-console.log(rectangle.getWidth())
-console.log(rectangle.getHeight())
-console.log(rectangle.getArea())
+// Ví dụ:
+
+// var a = [1, 2];
+// var b = [1, 2];
+// console.log(a == b);
+// Chạy chương trình và tìm hiểu 
+// vì sao kết quả lại là false mặc dù giá trị của 2 array 
+// có vẻ giống nhau. Viết câu trả lời ở dưới đây.
+
+//Vi du
+// var a = 'A';
+// var b = 'a';
+
+// console.log(a > b);
+// Chạy chương trình và tìm hiểu vì sao kết quả lại là 
+//false mặc dù 1000 trông có vẻ lớn hơn 200. 
+//Viết câu trả lời ở dưới đây.
+
