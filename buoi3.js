@@ -126,33 +126,62 @@
 // Gợi ý: numbers.map... (tự viết tiếp)
 //Bai tap 2
 // Make an array of strings of the names
-function namesOnly(arr) {
-    var arrOutput = arr.map(function(item){
-        return item.name
-    })
-    console.log(arrOutput)
-}
+// function namesOnly(arr) {
+//     var arrOutput = arr.map(function(item){
+//         return item.name
+//     })
+//     console.log(arrOutput)
+// }
 
-namesOnly([
-  {
-    name: "Angelina Jolie",
-    age: 80
-  },
-  {
-    name: "Eric Jones",
-    age: 2
-  },
-  {
-    name: "Paris Hilton",
-    age: 5
-  },
-  {
-    name: "Kayne West",
-    age: 16
-  },
-  {
-    name: "Bob Ziroll",
-    age: 100
-  }
-])
+// namesOnly([
+//   {
+//     name: "Angelina Jolie",
+//     age: 80
+//   },
+//   {
+//     name: "Eric Jones",
+//     age: 2
+//   },
+//   {
+//     name: "Paris Hilton",
+//     age: 5
+//   },
+//   {
+//     name: "Kayne West",
+//     age: 16
+//   },
+//   {
+//     name: "Bob Ziroll",
+//     age: 100
+//   }
+// ])
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+// bai tap 3 : tinh dien tich hinh chu nhat , S = A X B
+// function renderAcreage(arr) {
+//     var arrOutput = arr.map(function(item){
+//         return item.witdh * item.height
+//     })
+//     console.log(arrOutput)
+// }
+// renderAcreage([
+//   {
+//     witdh: 4,
+//     height : 6
+//   },
+//    {
+//     witdh: 5,
+//     height : 7
+//   },
+//   {
+//     witdh: 1,
+//     height : 3
+//   },
+//   {
+//     witdh: 5,
+//     height : 10
+//   },
+//   {
+//     witdh: 10,
+//     height : 10
+//   }
+// ]) 
