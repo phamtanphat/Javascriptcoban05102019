@@ -186,59 +186,73 @@
     //   }
     // ]) 
 // 13 : Ham filter
+    // var numbers = [1,2,3,4,5,6]
+    // var newNumbers = numbers.filter(function(item){
+    //     if(item > 3){
+    //         return true
+    //     }
+    //     return false
+    // })
+    // console.log(newNumbers)
+    //Bai tap 1
+    //Cho một mảng các số, trả về một mảng moi chỉ có các số từ 5 trở lên
+    // function fiveAndGreaterOnly(arr) {
+    //     return arr.filter(function(item){
+    //         if(item > 5){
+    //             return true
+    //         }
+    //         return false
+    //     })
+    // }
+    // console.log(fiveAndGreaterOnly([2,4,5,6,7,8,9,10]))
+    //Bai tap 2
+    // Ví dụ:
+    // Cho một mảng số, trả về một mảng mới chỉ bao gồm các số chẵn
+
+    // function evensOnly(arr) {
+    // 	return arr.filter(function(item){
+    //         return item % 2 == 0
+    //     })
+    // }
+    // console.log(evensOnly([1,2,3,4,5,6,7,8]))
+    // bai tap 3
+    // Viết hàm trả về số chẵn đầu tiên trong mảng sử dụng find method
+    // Nếu không tìm thấy số chẵn nào thì trả về undefined
+    // function findFirstEvenNumber(array) {
+    // 	return array.find(function(item){
+    //         return item % 2 == 0
+    //     })
+    // }
+    // console.log(findFirstEvenNumber([1,2,3,4,5,6]))
+    //Bai tap 4
+    /**
+     * viết hàm tìm số chia hết cho x đầu tiên có trong mảng
+     * @params {array} array - Mảng các chữ số
+     * @params {number} x - Số bị chia
+     * Nếu không có trả về undefined
+     * Example: 
+     * findDivisibleNum([1, 3, 4], 2) => 4
+     */
+
+    // function findDivisibleNum(array, x) {
+    //     // viết code ở đây.
+    //     return array.find(function(item){
+    //         return item % x == 0
+    //     })
+    //   }
+    
+    // console.log(findDivisibleNum([1, 3, 4], 5))
+// 14 : Ham reduce
+
 // var numbers = [1,2,3,4,5,6]
-// var newNumbers = numbers.filter(function(item){
-//     if(item > 3){
-//         return true
-//     }
-//     return false
-// })
-// console.log(newNumbers)
-//Bai tap 1
-//Cho một mảng các số, trả về một mảng moi chỉ có các số từ 5 trở lên
-// function fiveAndGreaterOnly(arr) {
-//     return arr.filter(function(item){
-//         if(item > 5){
-//             return true
-//         }
-//         return false
-//     })
-// }
-// console.log(fiveAndGreaterOnly([2,4,5,6,7,8,9,10]))
-//Bai tap 2
-// Ví dụ:
-// Cho một mảng số, trả về một mảng mới chỉ bao gồm các số chẵn
-
-// function evensOnly(arr) {
-// 	return arr.filter(function(item){
-//         return item % 2 == 0
-//     })
-// }
-// console.log(evensOnly([1,2,3,4,5,6,7,8]))
-// bai tap 3
-// Viết hàm trả về số chẵn đầu tiên trong mảng sử dụng find method
-// Nếu không tìm thấy số chẵn nào thì trả về undefined
-// function findFirstEvenNumber(array) {
-// 	return array.find(function(item){
-//         return item % 2 == 0
-//     })
-// }
-// console.log(findFirstEvenNumber([1,2,3,4,5,6]))
-//Bai tap 4
-/**
- * viết hàm tìm số chia hết cho x đầu tiên có trong mảng
- * @params {array} array - Mảng các chữ số
- * @params {number} x - Số bị chia
- * Nếu không có trả về undefined
- * Example: 
- * findDivisibleNum([1, 3, 4], 2) => 4
- */
-
-// function findDivisibleNum(array, x) {
-//     // viết code ở đây.
-//     return array.find(function(item){
-//         return item % x == 0
-//     })
-//   }
-  
-// console.log(findDivisibleNum([1, 3, 4], 5))
+// var sum = numbers.reduce(function( total , currentvalue){
+    // //Vong 1
+    // total => dai dien gia tri dau tien trong mang
+    // currentvalue : dai dien gia tri thu 2 trong mang
+    // //Vong 2 
+    // total => dai dien gia tri dau tien trong mang
+    // currentvalue : dai dien gia tri thu 3 trong mang
+//     var tong = total + currentvalue;
+//     return tong
+// },1)
+// console.log(sum)
