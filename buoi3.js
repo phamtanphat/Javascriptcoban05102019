@@ -7,10 +7,18 @@
 // array.splice : 
         // + Them gia tri vao vi tri nao arrayNumber.splice(vitri , 0 , giatrithemvao  )
         // - Xoa gia tri o vi tri arrayNumber.splice(vitri, soluongphantu  )
-var arrayNumber = [1,2,3,4,5]
+// var arrayNumber = [1,2,3,4,5]
 // arrayNumber.push(6)
 // arrayNumber.pop
 // arrayNumber.shift()
 // // arrayNumber.unshift(0)
 // arrayNumber.splice(1 , 1  )
-console.log(arrayNumber)
+// console.log(arrayNumber)
+//Btap 1 :
+// tra ve [2,3,1]
+function removeEnd(arr, n) {
+    arr.splice(arr.length  - n , n);
+    return arr
+}
+
+console.log(removeEnd([2, 3, 1, 8, 9, 7], 3));
