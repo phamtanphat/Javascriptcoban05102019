@@ -256,3 +256,40 @@
 //     return tong
 // },1)
 // console.log(sum)
+// Bai tap 1
+// Trả về số lượng người đã vote
+function totalVotes(arr) {
+    var tong = 0
+    var count = arr.reduce(function(total , currentvalue){
+        if(typeof total === 'object'){
+            for(var key in total){
+                if(key === 'voted'){
+                    if( total[key] == true){
+                       tong += 1 
+                    }
+                }
+            }
+        }
+        if(currentvalue.voted == true){
+            tong += 1
+        }
+        return tong
+    })
+    return count
+}
+
+var voters = [
+  {name:'Bob' , age: 30, voted: true},
+  {name:'Jake' , age: 32, voted: true},
+  {name:'Kate' , age: 25, voted: false},
+  {name:'Sam' , age: 20, voted: false},
+  {name:'Phil' , age: 21, voted: true},
+  {name:'Ed' , age:55, voted:true},
+  {name:'Tami' , age: 54, voted:true},
+  {name: 'Mary', age: 31, voted: false},
+  {name: 'Becky', age: 43, voted: false},
+  {name: 'Joey', age: 41, voted: true},
+  {name: 'Jeff', age: 30, voted: true},
+  {name: 'Zack', age: 19, voted: false}
+];
+console.log(totalVotes(voters)) // 7
