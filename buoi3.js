@@ -99,89 +99,119 @@
         // Expect: [4, 8, 12]
 //12 : Ham map
 
-// var numbers = [1,2,3,4,5]
+    // var numbers = [1,2,3,4,5]
 
-// var newNumbers = numbers.map(function(num){
-//     return num * 2
+    // var newNumbers = numbers.map(function(num){
+    //     return num * 2
+    // })
+    // console.log(newNumbers)
+
+    //bai tap 1 :
+
+    /**
+     * 1. Viết hàm tripple nhận vào 1 số và trả về số đó nhân 3
+     * 2. Sử dụng map method và hàm tripple để nhân 3 các phần 
+     * tử trong mảng dưới đây
+     */
+    // Khai báo tripple function ở đây
+    // function tripple(num){
+    //     return num * 3
+    // }
+    // var numbers = [10, 5, 8];
+    // var newNumbers = numbers.map(function(num){
+    //     return tripple(num)
+    // })
+    // console.log(newNumbers)
+
+    // Gợi ý: numbers.map... (tự viết tiếp)
+    //Bai tap 2
+    // Make an array of strings of the names
+    // function namesOnly(arr) {
+    //     var arrOutput = arr.map(function(item){
+    //         return item.name
+    //     })
+    //     console.log(arrOutput)
+    // }
+
+    // namesOnly([
+    //   {
+    //     name: "Angelina Jolie",
+    //     age: 80
+    //   },
+    //   {
+    //     name: "Eric Jones",
+    //     age: 2
+    //   },
+    //   {
+    //     name: "Paris Hilton",
+    //     age: 5
+    //   },
+    //   {
+    //     name: "Kayne West",
+    //     age: 16
+    //   },
+    //   {
+    //     name: "Bob Ziroll",
+    //     age: 100
+    //   }
+    // ])
+    // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+    // bai tap 3 : tinh dien tich hinh chu nhat , S = A X B
+    // function renderAcreage(arr) {
+    //     var arrOutput = arr.map(function(item){
+    //         return item.witdh * item.height
+    //     })
+    //     console.log(arrOutput)
+    // }
+    // renderAcreage([
+    //   {
+    //     witdh: 4,
+    //     height : 6
+    //   },
+    //    {
+    //     witdh: 5,
+    //     height : 7
+    //   },
+    //   {
+    //     witdh: 1,
+    //     height : 3
+    //   },
+    //   {
+    //     witdh: 5,
+    //     height : 10
+    //   },
+    //   {
+    //     witdh: 10,
+    //     height : 10
+    //   }
+    // ]) 
+// 13 : Ham filter
+// var numbers = [1,2,3,4,5,6]
+// var newNumbers = numbers.filter(function(item){
+//     if(item > 3){
+//         return true
+//     }
+//     return false
 // })
 // console.log(newNumbers)
-
-//bai tap 1 :
-
-/**
- * 1. Viết hàm tripple nhận vào 1 số và trả về số đó nhân 3
- * 2. Sử dụng map method và hàm tripple để nhân 3 các phần 
- * tử trong mảng dưới đây
- */
-// Khai báo tripple function ở đây
-// function tripple(num){
-//     return num * 3
+//Bai tap 1
+//Cho một mảng các số, trả về một mảng moi chỉ có các số từ 5 trở lên
+// function fiveAndGreaterOnly(arr) {
+//     return arr.filter(function(item){
+//         if(item > 5){
+//             return true
+//         }
+//         return false
+//     })
 // }
-// var numbers = [10, 5, 8];
-// var newNumbers = numbers.map(function(num){
-//     return tripple(num)
-// })
-// console.log(newNumbers)
-
-// Gợi ý: numbers.map... (tự viết tiếp)
+// console.log(fiveAndGreaterOnly([2,4,5,6,7,8,9,10]))
 //Bai tap 2
-// Make an array of strings of the names
-// function namesOnly(arr) {
-//     var arrOutput = arr.map(function(item){
-//         return item.name
-//     })
-//     console.log(arrOutput)
-// }
+// Ví dụ:
+// Cho một mảng số, trả về một mảng mới chỉ bao gồm các số chẵn
 
-// namesOnly([
-//   {
-//     name: "Angelina Jolie",
-//     age: 80
-//   },
-//   {
-//     name: "Eric Jones",
-//     age: 2
-//   },
-//   {
-//     name: "Paris Hilton",
-//     age: 5
-//   },
-//   {
-//     name: "Kayne West",
-//     age: 16
-//   },
-//   {
-//     name: "Bob Ziroll",
-//     age: 100
-//   }
-// ])
-// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
-// bai tap 3 : tinh dien tich hinh chu nhat , S = A X B
-// function renderAcreage(arr) {
-//     var arrOutput = arr.map(function(item){
-//         return item.witdh * item.height
+// function evensOnly(arr) {
+// 	return arr.filter(function(item){
+//         return item % 2 == 0
 //     })
-//     console.log(arrOutput)
 // }
-// renderAcreage([
-//   {
-//     witdh: 4,
-//     height : 6
-//   },
-//    {
-//     witdh: 5,
-//     height : 7
-//   },
-//   {
-//     witdh: 1,
-//     height : 3
-//   },
-//   {
-//     witdh: 5,
-//     height : 10
-//   },
-//   {
-//     witdh: 10,
-//     height : 10
-//   }
-// ]) 
+// console.log(evensOnly([1,2,3,4,5,6,7,8]))
