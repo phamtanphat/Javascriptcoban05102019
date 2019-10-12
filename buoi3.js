@@ -215,3 +215,30 @@
 //     })
 // }
 // console.log(evensOnly([1,2,3,4,5,6,7,8]))
+// bai tap 3
+// Viết hàm trả về số chẵn đầu tiên trong mảng sử dụng find method
+// Nếu không tìm thấy số chẵn nào thì trả về undefined
+// function findFirstEvenNumber(array) {
+// 	return array.find(function(item){
+//         return item % 2 == 0
+//     })
+// }
+// console.log(findFirstEvenNumber([1,2,3,4,5,6]))
+//Bai tap 4
+/**
+ * viết hàm tìm số chia hết cho x đầu tiên có trong mảng
+ * @params {array} array - Mảng các chữ số
+ * @params {number} x - Số bị chia
+ * Nếu không có trả về undefined
+ * Example: 
+ * findDivisibleNum([1, 3, 4], 2) => 4
+ */
+
+// function findDivisibleNum(array, x) {
+//     // viết code ở đây.
+//     return array.find(function(item){
+//         return item % x == 0
+//     })
+//   }
+  
+// console.log(findDivisibleNum([1, 3, 4], 5))
