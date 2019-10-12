@@ -244,74 +244,112 @@
     // console.log(findDivisibleNum([1, 3, 4], 5))
 // 14 : Ham reduce
 
-// var numbers = [1,2,3,4,5,6]
-// var sum = numbers.reduce(function( total , currentvalue){
-    // //Vong 1
-    // total => dai dien gia tri dau tien trong mang
-    // currentvalue : dai dien gia tri thu 2 trong mang
-    // //Vong 2 
-    // total => dai dien gia tri dau tien trong mang
-    // currentvalue : dai dien gia tri thu 3 trong mang
-//     var tong = total + currentvalue;
-//     return tong
-// },1)
-// console.log(sum)
-// Bai tap 1
-// Trả về số lượng người đã vote
-// function totalVotes(arr) {
+    // var numbers = [1,2,3,4,5,6]
+    // var sum = numbers.reduce(function( total , currentvalue){
+        // //Vong 1
+        // total => dai dien gia tri dau tien trong mang
+        // currentvalue : dai dien gia tri thu 2 trong mang
+        // //Vong 2 
+        // total => dai dien gia tri dau tien trong mang
+        // currentvalue : dai dien gia tri thu 3 trong mang
+    //     var tong = total + currentvalue;
+    //     return tong
+    // },1)
+    // console.log(sum)
+    // Bai tap 1
+    // Trả về số lượng người đã vote
+    // function totalVotes(arr) {
 
-//     var count = arr.reduce(function(total , currentvalue){
-//         if(currentvalue.voted == true){
-//             total++
-//         }
-//         return total
-//     },0)
-//     return count
-// }
+    //     var count = arr.reduce(function(total , currentvalue){
+    //         if(currentvalue.voted == true){
+    //             total++
+    //         }
+    //         return total
+    //     },0)
+    //     return count
+    // }
 
-// var voters = [
-//   {name:'Bob' , age: 30, voted: true},
-//   {name:'Jake' , age: 32, voted: true},
-//   {name:'Kate' , age: 25, voted: false},
-//   {name:'Sam' , age: 20, voted: false},
-//   {name:'Phil' , age: 21, voted: true},
-//   {name:'Ed' , age:55, voted:true},
-//   {name:'Tami' , age: 54, voted:true},
-//   {name: 'Mary', age: 31, voted: false},
-//   {name: 'Becky', age: 43, voted: false},
-//   {name: 'Joey', age: 41, voted: true},
-//   {name: 'Jeff', age: 30, voted: true},
-//   {name: 'Zack', age: 19, voted: false}
-// ];
-// console.log(totalVotes(voters)) // 7
+    // var voters = [
+    //   {name:'Bob' , age: 30, voted: true},
+    //   {name:'Jake' , age: 32, voted: true},
+    //   {name:'Kate' , age: 25, voted: false},
+    //   {name:'Sam' , age: 20, voted: false},
+    //   {name:'Phil' , age: 21, voted: true},
+    //   {name:'Ed' , age:55, voted:true},
+    //   {name:'Tami' , age: 54, voted:true},
+    //   {name: 'Mary', age: 31, voted: false},
+    //   {name: 'Becky', age: 43, voted: false},
+    //   {name: 'Joey', age: 41, voted: true},
+    //   {name: 'Jeff', age: 30, voted: true},
+    //   {name: 'Zack', age: 19, voted: false}
+    // ];
+    // console.log(totalVotes(voters)) // 7
 
-// bai tap 2
-// Tính tổng giá trị các món bên dưới
-// function shoppingSpree(arr) {
-//     return arr.reduce(function(total , currentvalue){
-//         return total + currentvalue.price
-//     },0)
-// }
+    // bai tap 2
+    // Tính tổng giá trị các món bên dưới
+    // function shoppingSpree(arr) {
+    //     return arr.reduce(function(total , currentvalue){
+    //         return total + currentvalue.price
+    //     },0)
+    // }
 
-// var wishlist = [
-//   { title: "Tesla Model S", price: 90000 },
-//   { title: "4 carat diamond ring", price: 45000 },
-//   { title: "Fancy hacky Sack", price: 5 },
-//   { title: "Gold fidgit spinner", price: 2000 },
-//   { title: "A second Tesla Model S", price: 90000 }
-// ];
-// console.log(shoppingSpree(wishlist))// 227005
-// bai tap 3
+    // var wishlist = [
+    //   { title: "Tesla Model S", price: 90000 },
+    //   { title: "4 carat diamond ring", price: 45000 },
+    //   { title: "Fancy hacky Sack", price: 5 },
+    //   { title: "Gold fidgit spinner", price: 2000 },
+    //   { title: "A second Tesla Model S", price: 90000 }
+    // ];
+    // console.log(shoppingSpree(wishlist))// 227005
+    // bai tap 3
 
-function countOccurrences(arr) {
-    return arr.reduce(function(total , currentvalue){
-        if(currentvalue in total){
-            total[currentvalue]++
-        }else{
-            total[currentvalue] = 1
-        }
-        return total
-    },{})
+    // function countOccurrences(arr) {
+    //     return arr.reduce(function(total , currentvalue){
+    //         if(currentvalue in total){
+    //             total[currentvalue]++
+    //         }else{
+    //             total[currentvalue] = 1
+    //         }
+    //         return total
+    //     },{})
+    // }
+    // console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]));
+// 15: Array tong hop
+// Ví dụ
+/* Filter các sản phẩm khi biết id danh mục sản phẩm
+  Ví dụ đây là 1 danh sách các danh mục sản phẩm, 
+  khi người dùng muốn lọc các sản phẩm thuộc danh mục nào 
+  thì filter các sản phẩm của danh mục đó.
+  var categories = [
+    { id: 1, name: 'Đồ điện tử'},
+    { id: 2, name: 'Đồ gia dụng'},
+    { id: 3, name: 'Nội thất'}
+  ];
+*/
+
+var listProducts = [
+ {id: 1, categoryId: 1, name: 'Tivi'},
+ {id: 2, categoryId: 1, name: 'Tủ lạnh'},
+ {id: 3, categoryId: 3, name: 'Ghế sofa'},
+ {id: 4, categoryId: 1, name: 'Máy giặt'},
+ {id: 5, categoryId: 2, name: 'Chén bát'},
+ {id: 6, categoryId: 2, name: 'Nồi cơm điện'},
+ {id: 7, categoryId: 3, name: 'Cửa kính'},
+ {id: 8, categoryId: 1, name: 'Điều hoà'},
+ {id: 9, categoryId: 3, name: 'Bàn tròn'},
+ {id: 10, categoryId: 2, name: 'Lò vi sóng'},
+]
+
+function filterProductsByCategoryId(products, categoryId) {
+  // your code here!
+  var product = {}
+    var arrayFilterCategoryId = products.filter(function(item){
+        return item.categoryId == categoryId
+    })
+    return arrayFilterCategoryId.map(function(item){
+        return {'id' : item.id , 'name' : item.name}
+    })
 }
-console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]));
+console.log(filterProductsByCategoryId(listProducts,3))
+
 
