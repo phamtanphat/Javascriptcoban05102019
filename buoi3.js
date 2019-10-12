@@ -301,3 +301,17 @@
 //   { title: "A second Tesla Model S", price: 90000 }
 // ];
 // console.log(shoppingSpree(wishlist))// 227005
+// bai tap 3
+
+function countOccurrences(arr) {
+    return arr.reduce(function(total , currentvalue){
+        if(currentvalue in total){
+            total[currentvalue]++
+        }else{
+            total[currentvalue] = 1
+        }
+        return total
+    },{})
+}
+console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]));
+
