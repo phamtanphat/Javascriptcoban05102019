@@ -16,9 +16,18 @@
 // console.log(arrayNumber)
 //Btap 1 :
 // tra ve [2,3,1]
-function removeEnd(arr, n) {
-    arr.splice(arr.length  - n , n);
-    return arr
-}
+// function removeEnd(arr, n) {
+//     arr.splice(arr.length  - n , n);
+//     return arr
+// }
 
-console.log(removeEnd([2, 3, 1, 8, 9, 7], 3));
+// console.log(removeEnd([2, 3, 1, 8, 9, 7], 3));
+//Btap 2 :
+// Viết hàm JavaScript để lấy phần tử đầu tiên của mảng. Truyền tham số 'n' sẽ trả về các phần tử 'n' đầu tiên của mảng
+
+// function first(arr, n) {
+   
+//     return  arr.splice(0 , n )
+// }
+
+// console.log(first([1, 2, 3], 2)); // expect [1, 2]
