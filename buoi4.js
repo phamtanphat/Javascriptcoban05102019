@@ -85,49 +85,64 @@
     // }
     // console.log(rightTriangle(7,3,4))
 // 17 : Object handle
-// var cat = {
-//     name : 'Meo meo',
-//     weight : '3 kg',
-//     getWeight : function(){
-//         console.log(this.weight)
-//     }
-// }
-// constructor function
-// camelcase : quy luat dat ten bien
-// function Animal(name , weight){
-//     this.name = name
-//     this.weight = weight
-//     this.eat = function(food){
-//         console.log(food)
-//     }
-// }
-// var cat2 = new Animal("cat",2)
-// console.log(cat2.name)
-// console.log(cat2.weight)
-// cat2.boss = "Nguyen Van A"
-// console.log(cat2.boss)
-// **
-//  * Viết hàm countProperty để in ra độ dài của một đối tượng
-//  * @param {object}
-//  * @return {number}
-//  * 
-//  * Example: 
-//  * var student = {
-//  *      name: "Jerry", 
-//  *      age: 14,
-//  *      role: "student"
-//  *  }
-//  * lengthObj(student); // length: 3
-// }
-// */
+    // var cat = {
+    //     name : 'Meo meo',
+    //     weight : '3 kg',
+    //     getWeight : function(){
+    //         console.log(this.weight)
+    //     }
+    // }
+    // constructor function
+    // camelcase : quy luat dat ten bien
+    // function Animal(name , weight){
+    //     this.name = name
+    //     this.weight = weight
+    //     this.eat = function(food){
+    //         console.log(food)
+    //     }
+    // }
+    // var cat2 = new Animal("cat",2)
+    // console.log(cat2.name)
+    // console.log(cat2.weight)
+    // cat2.boss = "Nguyen Van A"
+    // console.log(cat2.boss)
+    // **
+    //  * Viết hàm countProperty để in ra độ dài của một đối tượng
+    //  * @param {object}
+    //  * @return {number}
+    //  * 
+    //  * Example: 
+    //  * var student = {
+    //  *      name: "Jerry", 
+    //  *      age: 14,
+    //  *      role: "student"
+    //  *  }
+    //  * lengthObj(student); // length: 3
+    // }
+    // */
 
-function countProperty(obj) {
-  // viết code ở đây
-  return Object.keys(obj).length
+    // function countProperty(obj) {
+    //   // viết code ở đây
+    //   return Object.keys(obj).length
+    // }
+    // var student = {
+    //     name: "Jerry", 
+    //     age: 14,
+    //     role: "student"
+    // }
+    // console.log(countProperty(student))
+//18 : Prototype object
+function Animal(name , weight){
+    this.name = name
+    this.weight = weight
+    this.eat = function(food){
+        console.log(food)
+    }
 }
-var student = {
-    name: "Jerry", 
-    age: 14,
-    role: "student"
+var cat = new Animal('Meo meo',2)
+var cat2 = new Animal('Meo 1' , 3)
+Animal.prototype.run = function(){
+    console.log("run")
 }
-console.log(countProperty(student))
+
+console.log(cat2.run == cat.run)
