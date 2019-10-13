@@ -287,29 +287,46 @@
     // }
     // console.log(i)
 // 23 : function context  , bind
-// const mouse = {
-//     name : 'Mickey',
-//     sayHi : function(){
-//         console.log(this.name + " say hi")
-//     }
-// }
-// mouse.sayHi()
-// let coppySayhi = mouse.sayHi
-// coppySayhi.bind({name : 'Jerry'})()
-// vi du
+    // const mouse = {
+    //     name : 'Mickey',
+    //     sayHi : function(){
+    //         console.log(this.name + " say hi")
+    //     }
+    // }
+    // mouse.sayHi()
+    // let coppySayhi = mouse.sayHi
+    // coppySayhi.bind({name : 'Jerry'})()
+    // vi du
 
-function run(cb){
-    cb()
-    console.log("running finish")
-    
-}
-const mouse = {
-    name : 'Mickey',
-    run : function(){
-        console.log(this.name + ' running')
+    // function run(cb){
+    //     cb()
+    //     console.log("running finish")
+        
+    // }
+    // const mouse = {
+    //     name : 'Mickey',
+    //     run : function(){
+    //         console.log(this.name + ' running')
+    //     }
+    // }
+
+    // run(mouse.run.bind(mouse))
+// 24 : arrow function (fat arrow)
+// const arraynumber = [1,2,3,4,5,6,7,8,9,10]
+// const newArray = arraynumber.map( (item , index)  => item * 2)
+// console.log(newArray)
+/**
+     * 1. Viết hàm tripple nhận vào 1 số và trả về số đó nhân 3
+     * 2. Sử dụng map method và hàm tripple để nhân 3 các phần 
+     * tử trong mảng dưới đây
+     */
+    // Khai báo tripple function ở đây
+    function tripple(num){
+        return num * 3
     }
-}
+    var numbers = [10, 5, 8];
+    var newNumbers = numbers.map()
+    console.log(newNumbers)
 
-run(mouse.run.bind(mouse))
 
 
