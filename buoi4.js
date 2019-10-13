@@ -35,14 +35,14 @@
 // bai tap 1 :
 // Dùng hàm powerup tính bình phương các số chia hết cho 2 trong mảng truyền vào
 // [1,3,2,5,6] => [1,3,4,5,36]
-function powerup(arr) {
-  // your code here!
-  return arr.map(function(item){
-      if(item % 2 == 0) return Math.pow(item , 2)
-      return item
-  })
-}
-console.log(powerup([1,3,2,5,6]))
+// function powerup(arr) {
+//   // your code here!
+//   return arr.map(function(item){
+//       if(item % 2 == 0) return Math.pow(item , 2)
+//       return item
+//   })
+// }
+// console.log(powerup([1,3,2,5,6]))
 //Bai tap 2 
 // * 
 //   Dùng hàm average tính điểm trung bình 3 môn của một học sinh.
@@ -50,8 +50,19 @@ console.log(powerup([1,3,2,5,6]))
 // */
 
 function average(arr) {
+    return Math.round(arr.reduce(function(total , currentvalue){
+        return total + currentvalue
+    },0) / arr.length)
 }
 
-average([8, 8 , 6.75]) // 8
-
-
+console.log(average([8, 8 , 6.75])) // 8
+// Ví dụ
+/* 
+  Viết hàm positiveNumber để chuyển các số âm trong một mảng thành các số dương.
+  Yêu cầu sử dụng Math Object
+    [1,-2,-3,-4,5,6,7,-8] => [1,2,3,4,5,6,7,8]
+*/
+function positiveNumber(arr) {
+  // your code here
+    
+}
