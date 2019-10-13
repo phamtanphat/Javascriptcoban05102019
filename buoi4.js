@@ -269,3 +269,23 @@
 //     var b = 10
 // }
 // show()
+// 22 : var let const
+// khai bao
+// hoisting
+// block scope
+
+// let a = 5
+// function show(){
+//     let a = 10
+//     console.log(a)
+// }
+// show()
+// console.log(a)
+
+for(let i = 0 ; i <5 ; i++){
+
+}
+console.log(i)
+
+
+
