@@ -220,44 +220,52 @@
     //   console.log(doSomething(-1))
     
     // Test 2 hàm trên với cùng đầu vào
-//2 : Scope
-// global scope
-// local scope
-// block scope
-// var a = 5
-// function tinhCong(a){
-//     console.log(a * 5)
+//20 : Scope
+    // global scope
+    // local scope
+    // block scope
+    // var a = 5
+    // function tinhCong(a){
+    //     console.log(a * 5)
+    // }
+    // tinhCong(a)
+    // console.log(a)
+    // Ví dụ
+    // var a = 1;
+
+    // function foo() {
+    //   var a = 2;
+    //   return a;
+    // }
+
+    // function bar() {
+    //   a = 2;
+    //   return a;
+    // }
+
+    // foo();
+    // console.log(a); // Kết quả?
+    // bar();
+    // console.log(a); // Kết quả?
+    // Ví dụ
+    // var a = 1;
+
+    // var b = {
+    //   a: 2,
+    //   foo: function() {
+    //     console.log(this.a);
+    //   }
+    // };
+
+    // b.foo();
+    // var fooCopy = b.foo;
+    // fooCopy();
+    // Chạy code và giải thích vì sao kết quả dòng 10 khác dòng 13
+// 21 : hoisting
+// var a
+// function show(){
+//     var b 
+//     console.log(b)
+//     var b = 10
 // }
-// tinhCong(a)
-// console.log(a)
-// Ví dụ
-// var a = 1;
-
-// function foo() {
-//   var a = 2;
-//   return a;
-// }
-
-// function bar() {
-//   a = 2;
-//   return a;
-// }
-
-// foo();
-// console.log(a); // Kết quả?
-// bar();
-// console.log(a); // Kết quả?
-// Ví dụ
-var a = 1;
-
-var b = {
-  a: 2,
-  foo: function() {
-    console.log(this.a);
-  }
-};
-
-b.foo();
-var fooCopy = b.foo;
-fooCopy();
-// Chạy code và giải thích vì sao kết quả dòng 10 khác dòng 13
+// show()
