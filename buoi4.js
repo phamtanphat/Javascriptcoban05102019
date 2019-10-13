@@ -262,30 +262,39 @@
     // fooCopy();
     // Chạy code và giải thích vì sao kết quả dòng 10 khác dòng 13
 // 21 : hoisting
-// var a
-// function show(){
-//     var b 
-//     console.log(b)
-//     var b = 10
-// }
-// show()
+    // var a
+    // function show(){
+    //     var b 
+    //     console.log(b)
+    //     var b = 10
+    // }
+    // show()
 // 22 : var let const
-// khai bao
-// hoisting
-// block scope
+    // khai bao
+    // hoisting
+    // block scope
 
-// let a = 5
-// function show(){
-//     let a = 10
-//     console.log(a)
-// }
-// show()
-// console.log(a)
+    // let a = 5
+    // function show(){
+    //     let a = 10
+    //     console.log(a)
+    // }
+    // show()
+    // console.log(a)
 
-for(let i = 0 ; i <5 ; i++){
+    // for(let i = 0 ; i <5 ; i++){
 
+    // }
+    // console.log(i)
+// 23 : function context  , bind
+const mouse = {
+    name : 'Mickey',
+    sayHi : function(){
+        console.log(this.name + " say hi")
+    }
 }
-console.log(i)
-
+// mouse.sayHi()
+let coppySayhi = mouse.sayHi
+coppySayhi.bind({name : 'Jerry'})()
 
 
