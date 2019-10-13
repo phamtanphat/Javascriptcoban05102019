@@ -287,14 +287,29 @@
     // }
     // console.log(i)
 // 23 : function context  , bind
+// const mouse = {
+//     name : 'Mickey',
+//     sayHi : function(){
+//         console.log(this.name + " say hi")
+//     }
+// }
+// mouse.sayHi()
+// let coppySayhi = mouse.sayHi
+// coppySayhi.bind({name : 'Jerry'})()
+// vi du
+
+function run(cb){
+    cb()
+    console.log("running finish")
+    
+}
 const mouse = {
     name : 'Mickey',
-    sayHi : function(){
-        console.log(this.name + " say hi")
+    run : function(){
+        console.log(this.name + ' running')
     }
 }
-// mouse.sayHi()
-let coppySayhi = mouse.sayHi
-coppySayhi.bind({name : 'Jerry'})()
+
+run(mouse.run.bind(mouse))
 
 
