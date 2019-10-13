@@ -329,18 +329,26 @@
     // var newNumbers = numbers.map(item => tripple(item))
     // console.log(newNumbers)
 // 25 : arrow function va function
-
+    // const a = {
+    //     name : 'A',
+    //     run : function(){
+    //         const that = this
+    //         console.log(this.name + ' running')
+    //         var run2 =  function() {
+    //             console.log(that.name + ' running second')
+    //         }
+    //         run2()
+    //     }
+    // }
+    // a.run()
+// 26 : Template String : backtick
 const a = {
-    name : 'A',
-    run : function(){
-        const that = this
-        console.log(this.name + ' running')
-        var run2 =  function() {
-            console.log(that.name + ' running second')
-        }
-        run2()
+    name : 'Nguyen Van A',
+    location : 'Quan 10',
+    sayHello : function(){
+        console.log(`  I ' m  ${this.name}`)
     }
 }
-a.run()
+a.sayHello()
 
 
