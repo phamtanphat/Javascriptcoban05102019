@@ -342,13 +342,29 @@
     // }
     // a.run()
 // 26 : Template String : backtick
-const a = {
-    name : 'Nguyen Van A',
-    location : 'Quan 10',
-    sayHello : function(){
-        console.log(`  I ' m  ${this.name}`)
-    }
-}
-a.sayHello()
-
+    // const a = {
+    //     name : 'Nguyen Van A',
+    //     location : 'Quan 10',
+    //     sayHello : function(){
+    //         console.log(`  I ' m  ${this.name}`)
+    //     }
+    // }
+    // a.sayHello()
+// 27 : arguments
+    // Array like object
+    // function tinhcong(){
+    //     const array = Array.from(arguments)
+    //     return array
+    // }
+    // console.log(tinhcong(5,6,1,1,1,1,1,1,3,2,4))
+// 28 : rest spread
+//rest
+// function tinh(...number){
+//     console.log(number)
+// }
+// tinh(2,3,4,5,6,7)
+//spread
+// const a = [1,2,3,4,5]
+// const b = [...a,6,7,8,9,10]
+// console.log(b)
 
