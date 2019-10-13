@@ -186,37 +186,78 @@
     // console.log(student1.average()); // 7
     // console.log(student2.average()); // 8
 // 19 : Ternary 
-// var a = 5
-// var b = 10
-// if(a > b){
-//     console.log(" a lon hon b")
-// }else{
-//     console.log("a khac b")
-// }
-// cau truc : (bieu thuc tra ve boolean) ? neu bang true : neu bang false
+    // var a = 5
+    // var b = 10
+    // if(a > b){
+    //     console.log(" a lon hon b")
+    // }else{
+    //     console.log("a khac b")
+    // }
+    // cau truc : (bieu thuc tra ve boolean) ? neu bang true : neu bang false
 
-// a > b ? console.log("a lon hon b") : console.log("a khac b")
-// bai tap 
-// Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
-// var ketqua = (a > b) ? "a lon hon b" : "a khac b"
-// console.log(ketqua)
-function doSomething(a) {
-    var b;
-    if (a > 0) {
-      b = 1;
-    } else if (a < 0) {
-      b = 2;
-    } else {
-      b = 3;
-    }
-    return b;
+    // a > b ? console.log("a lon hon b") : console.log("a khac b")
+    // bai tap 
+    // Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
+    // var ketqua = (a > b) ? "a lon hon b" : "a khac b"
+    // console.log(ketqua)
+    // function doSomething(a) {
+    //     var b;
+    //     if (a > 0) {
+    //       b = 1;
+    //     } else if (a < 0) {
+    //       b = 2;
+    //     } else {
+    //       b = 3;
+    //     }
+    //     return b;
+    //   }
+    //   function doSomethingTernary(a) {
+    //     var b
+    //     b = (a > 0) ? 1 : a < 0 ? 2 : 3
+    //     return b
+    // }
+    //   console.log(doSomethingTernary(-1))
+    //   console.log(doSomething(-1))
+    
+    // Test 2 hàm trên với cùng đầu vào
+//2 : Scope
+// global scope
+// local scope
+// block scope
+// var a = 5
+// function tinhCong(a){
+//     console.log(a * 5)
+// }
+// tinhCong(a)
+// console.log(a)
+// Ví dụ
+// var a = 1;
+
+// function foo() {
+//   var a = 2;
+//   return a;
+// }
+
+// function bar() {
+//   a = 2;
+//   return a;
+// }
+
+// foo();
+// console.log(a); // Kết quả?
+// bar();
+// console.log(a); // Kết quả?
+// Ví dụ
+var a = 1;
+
+var b = {
+  a: 2,
+  foo: function() {
+    console.log(this.a);
   }
-  function doSomethingTernary(a) {
-    var b
-    b = (a > 0) ? 1 : a < 0 ? 2 : 3
-    return b
-}
-  console.log(doSomethingTernary(-1))
-  console.log(doSomething(-1))
-  
-  // Test 2 hàm trên với cùng đầu vào
+};
+
+b.foo();
+var fooCopy = b.foo;
+fooCopy();
+// Chạy code và giải thích vì sao kết quả dòng 10 khác dòng 13
