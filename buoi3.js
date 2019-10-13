@@ -342,12 +342,13 @@ var listProducts = [
 
 function filterProductsByCategoryId(products, categoryId) {
   // your code here!
-  var product = {}
+
     var arrayFilterCategoryId = products.filter(function(item){
         return item.categoryId == categoryId
     })
     return arrayFilterCategoryId.map(function(item){
-        return {'id' : item.id , 'name' : item.name}
+        delete item.categoryId
+        return item
     })
 }
 console.log(filterProductsByCategoryId(listProducts,3))
