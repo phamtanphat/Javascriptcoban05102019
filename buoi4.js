@@ -194,9 +194,12 @@
 //     console.log("a khac b")
 // }
 // cau truc : (bieu thuc tra ve boolean) ? neu bang true : neu bang false
+
 // a > b ? console.log("a lon hon b") : console.log("a khac b")
 // bai tap 
 // Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
+// var ketqua = (a > b) ? "a lon hon b" : "a khac b"
+// console.log(ketqua)
 function doSomething(a) {
     var b;
     if (a > 0) {
@@ -209,9 +212,11 @@ function doSomething(a) {
     return b;
   }
   function doSomethingTernary(a) {
-    
-  }
-  console.log(doSomethingTernary(0))
-  console.log(doSomething(0))
+    var b
+    b = (a > 0) ? 1 : a < 0 ? 2 : 3
+    return b
+}
+  console.log(doSomethingTernary(-1))
+  console.log(doSomething(-1))
   
   // Test 2 hàm trên với cùng đầu vào
