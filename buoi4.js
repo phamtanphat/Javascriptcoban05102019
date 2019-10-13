@@ -132,17 +132,86 @@
     // }
     // console.log(countProperty(student))
 //18 : Prototype object
-function Animal(name , weight){
-    this.name = name
-    this.weight = weight
-    this.eat = function(food){
-        console.log(food)
-    }
-}
-var cat = new Animal('Meo meo',2)
-var cat2 = new Animal('Meo 1' , 3)
-Animal.prototype.run = function(){
-    console.log("run")
-}
+    // function Animal(name , weight){
+    //     this.name = name
+    //     this.weight = weight
+    //     this.eat = function(food){
+    //         console.log(food)
+    //     }
+    // }
+    // var cat = new Animal('Meo meo',2)
+    // var cat2 = new Animal('Meo 1' , 3)
+    // Animal.prototype.run = function(){
+    //     console.log("run")
+    // }
 
-console.log(cat2.run == cat.run)
+    // console.log(cat2.run == cat.run)
+    /*
+    Viết hàm xây dựng các đối tượng student có các thuộc tính sau:
+    - name: String,
+    - level: String,
+    - school: String
+
+    Trong đó, thuộc tính school là thuộc tính dùng chung, có giá trị là "KhoaPham".
+    */
+
+    // function Student(name, level) {
+    //     this.name = name 
+    //     this.level = level
+    // }
+
+    // Student.prototype.school = "KhoaPham"
+    /*
+    Viết hàm xây dựng các đối tượng student gồm các thuộc tính:
+        diemToan: Number,
+        diemLy: Number,
+        diemHoa: Number
+        average: [function];
+
+        average là hàm tính điểm trung bình 3 môn. 
+        average là thuộc tính dùng chung.
+    */
+
+    // function Student(diemToan, diemLy, diemHoa) {
+    //     this.diemToan = diemToan;
+    //     this.diemLy = diemLy;
+    //     this.diemHoa = diemHoa;
+    // }
+    // Student.prototype.average = function(){
+    //     return Math.round((this.diemToan + this.diemHoa + this.diemLy) /3)
+    // }
+    // var student1 = new Student(6, 7, 7);
+    // var student2 = new Student(8, 9, 6);
+
+    // console.log(student1.average()); // 7
+    // console.log(student2.average()); // 8
+// 19 : Ternary 
+// var a = 5
+// var b = 10
+// if(a > b){
+//     console.log(" a lon hon b")
+// }else{
+//     console.log("a khac b")
+// }
+// cau truc : (bieu thuc tra ve boolean) ? neu bang true : neu bang false
+// a > b ? console.log("a lon hon b") : console.log("a khac b")
+// bai tap 
+// Sử dụng ternary operator thay thế cho if else sao cho đoạn code sau không thay đổi logic
+function doSomething(a) {
+    var b;
+    if (a > 0) {
+      b = 1;
+    } else if (a < 0) {
+      b = 2;
+    } else {
+      b = 3;
+    }
+    return b;
+  }
+  function doSomethingTernary(a) {
+    
+  }
+  console.log(doSomethingTernary(0))
+  console.log(doSomething(0))
+  
+  // Test 2 hàm trên với cùng đầu vào
