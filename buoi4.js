@@ -49,13 +49,13 @@
 //   Làm tròn điểm trung bình
 // */
 
-function average(arr) {
-    return Math.round(arr.reduce(function(total , currentvalue){
-        return total + currentvalue
-    },0) / arr.length)
-}
+// function average(arr) {
+//     return Math.round(arr.reduce(function(total , currentvalue){
+//         return total + currentvalue
+//     },0) / arr.length)
+// }
 
-console.log(average([8, 8 , 6.75])) // 8
+// console.log(average([8, 8 , 6.75])) // 8
 // Ví dụ
 /* 
   Viết hàm positiveNumber để chuyển các số âm trong một mảng thành các số dương.
@@ -64,5 +64,8 @@ console.log(average([8, 8 , 6.75])) // 8
 */
 function positiveNumber(arr) {
   // your code here
-    
+    return arr.map(function(item){
+        return Math.abs(item)
+    })
 }
+console.log(positiveNumber([1,-2,-3,-4,5,6,7,-8]))
