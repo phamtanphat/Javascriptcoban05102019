@@ -378,6 +378,15 @@
     // const [a,b,c,d] = arrayNumber
     // console.log(a)
     //Object:
-    const teo = {name : 'Nguyen Van Teo',age : 20 , address : "38 nguyen lam"}
-    const {name , age , address} = teo
-    console.log(name , age ,address)
+    // const teo = {name : 'Nguyen Van Teo',age : 20 , address : "38 nguyen lam"}
+    // const {name , age , address} = teo
+    // console.log(name , age ,address)
+//30 : Closure
+// grabage collection
+    function show(){
+        var a = 10 + 5
+        return function () {
+            console.log(a)
+        }
+    }
+    show()()
