@@ -367,4 +367,9 @@
 // const a = [1,2,3,4,5]
 // const b = [...a,6,7,8,9,10]
 // console.log(b)
+const a = [1,2,3,4 , {name : 'phat'}]
+const b = [...a]
+a[4].name = 'Pham tan phat'
+console.log(a)
+console.log(b)
 
