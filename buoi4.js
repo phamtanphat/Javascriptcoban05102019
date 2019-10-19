@@ -358,18 +358,26 @@
     // }
     // console.log(tinhcong(5,6,1,1,1,1,1,1,3,2,4))
 // 28 : rest spread
-//rest
-// function tinh(...number){
-//     console.log(number)
-// }
-// tinh(2,3,4,5,6,7)
-//spread
-// const a = [1,2,3,4,5]
-// const b = [...a,6,7,8,9,10]
-// console.log(b)
-const a = [1,2,3,4 , {name : 'phat'}]
-const b = [...a]
-a[4].name = 'Pham tan phat'
-console.log(a)
-console.log(b)
-
+    //rest
+    // function tinh(...number){
+    //     console.log(number)
+    // }
+    // tinh(2,3,4,5,6,7)
+    //spread
+    // const a = [1,2,3,4,5]
+    // const b = [...a,6,7,8,9,10]
+    // console.log(b)
+    // const a = [1,2,3,4 , {name : 'phat'}]
+    // const b = [...a]
+    // a[4].name = 'Pham tan phat'
+    // console.log(a)
+    // console.log(b)
+// 29 : Destructuring
+    // Array
+    // const arrayNumber = [1,2,3,4,5,6,7,8,9,10]
+    // const [a,b,c,d] = arrayNumber
+    // console.log(a)
+    //Object:
+    const teo = {name : 'Nguyen Van Teo',age : 20 , address : "38 nguyen lam"}
+    const {name , age , address} = teo
+    console.log(name , age ,address)
