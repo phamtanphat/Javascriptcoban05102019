@@ -83,26 +83,25 @@ function dientich(a , b ){
         .catch(error => rej(error))
     })
 }
-dientich( 5 , 6)
-.then(dientich => console.log(dientich))
-.catch(error => console.log(error))
-
-
+// dientich( 5 , 6)
+// .then(dientich => console.log(dientich))
+// .catch(error => console.log(error))
 // chu vi hinh chu nhat(P = (A + B) X 2)
-// function chuvi( a , b , cb){
-//     cong(a , b , function(error , tong){
-//         if(error) return cb(error)
-//         nhan(tong , 2 , function(error , tich){
-//             if(error) return cb(error)
-//             return cb(null , tich)
-//         })
-//     })
-// }
+function chuvi( a , b ){
+    return new Promise((res , rej) => {
+        cong(a , b)
+        .then(tong => {
+            nhan(tong , 2)
+            .then(chuvi => res(chuvi))
+            .catch(error => rej(error))
+        })
+        .catch(error => rej(error))
+    })
+}
 
-// chuvi( 5 , undefined , function(error , value){
-//     if(error) return console.log(error)
-//     return console.log(value);
-// })
+chuvi( 5 , 10)
+.then(ketqua => console.log(ketqua))
+.catch(error => console.log(error))
 
 
 
