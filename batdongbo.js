@@ -37,37 +37,40 @@ function cong(a , b){
         });
     })
 }
-cong(5,10)
-.then(response => console.log(response))
 
-
-// function tru(a , b , cb){
-//     const url = `https://pheptinhonline.herokuapp.com/tru/${a}/${b}`
-//     request(url , function (error , response , body) {
-//         if(error) return cb(error.message);
-//         const value = JSON.parse(body)
-//         if(!value.success) return cb(value.message)
-//         return cb(null , value.message)
-//     });
-// }
-// function nhan(a , b , cb){
-//     const url = `https://pheptinhonline.herokuapp.com/nhan/${a}/${b}`
-//     request(url , function (error , response , body) {
-//         if(error) return cb(error.message);
-//         const value = JSON.parse(body)
-//         if(!value.success) return cb(value.message)
-//         return cb(null , value.message)
-//     });
-// }
-// function chia(a , b , cb){
-//     const url = `https://pheptinhonline.herokuapp.com/chia/${a}/${b}`
-//     request(url , function (error , response , body) {
-//         if(error) return cb(error.message);
-//         const value = JSON.parse(body)
-//         if(!value.success) return cb(value.message)
-//         return cb(null , value.message)
-//     });
-// }
+function tru(a , b ){
+    return new Promise((res , rej) => {
+        const url = `https://pheptinhonline.herokuapp.com/tru/${a}/${b}`
+        request(url , function (error , response , body) {
+            if(error) return rej(error.message);
+            const value = JSON.parse(body)
+            if(!value.success) return rej(value.message)
+            return res(null , value.message)
+        });
+    })
+}
+function nhan(a , b ){
+    return new Promise((res , rej) => {
+        const url = `https://pheptinhonline.herokuapp.com/nhan/${a}/${b}`
+        request(url , function (error , response , body) {
+            if(error) return rej(error.message);
+            const value = JSON.rej(body)
+            if(!value.success) return rej(value.message)
+            return res(null , value.message)
+        });
+    })
+}
+function chia(a , b , cb){
+    return new Promise((res , rej) => {
+        const url = `https://pheptinhonline.herokuapp.com/chia/${a}/${b}`
+        request(url , function (error , response , body) {
+            if(error) return rej(error.message);
+            const value = JSON.parse(body)
+            if(!value.success) return rej(value.message)
+            return res(null , value.message)
+        });
+    })
+}
 // cong(5 , 10 , function(error , body){
 //     if(error) return console.log(error);
 //     console.log(body);
