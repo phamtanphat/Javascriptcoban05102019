@@ -30,7 +30,7 @@ function cong(a , b){
     return new Promise((resolve , reject) =>{
         const url = `https://pheptinhonline.herokuapp.com/cong/${a}/${b}`
         request(url , function (error , response , body) {
-            if(error) return reject(error.message)
+            if(error) return reject(error)
             const value = JSON.parse(body)
             if(!value.success) return reject(value.message)
             return resolve(value.message)
@@ -42,7 +42,7 @@ function tru(a , b ){
     return new Promise((res , rej) => {
         const url = `https://pheptinhonline.herokuapp.com/tru/${a}/${b}`
         request(url , function (error , response , body) {
-            if(error) return rej(error.message)
+            if(error) return rej(error)
             const value = JSON.parse(body)
             if(!value.success) return rej(value.message)
             return res(value.message)
@@ -53,7 +53,7 @@ function nhan(a , b ){
     return new Promise((res , rej) => {
         const url = `https://pheptinhonline.herokuapp.com/nhan/${a}/${b}`
         request(url , function (error , response , body) {
-            if(error) return rej(error.message)
+            if(error) return rej(error)
             const value = JSON.parse(body)
             if(!value.success) return rej(value.message)
             return res(value.message)
@@ -64,7 +64,7 @@ function chia(a , b , cb){
     return new Promise((res , rej) => {
         const url = `https://pheptinhonline.herokuapp.com/chia/${a}/${b}`
         request(url , function (error , response , body) {
-            if(error) return rej(error.message)
+            if(error) return rej(error)
             const value = JSON.parse(body)
             if(!value.success) return rej(value.message)
             return res(value.message)
@@ -89,12 +89,9 @@ function dientich(a , b ){
 // chu vi hinh chu nhat(P = (A + B) X 2)
 function chuvi( a , b ){
     return new Promise((res , rej) => {
-        cong(a , b)
-        .then(tong => {
-            nhan(tong , 2)
-            .then(chuvi => res(chuvi))
-            .catch(error => rej(error))
-        })
+        cong(a , b )
+        .then(tong => nhan(tong , 2))
+        .then(chuvi => res(chuvi))
         .catch(error => rej(error))
     })
 }
