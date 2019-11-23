@@ -76,29 +76,54 @@ function chia(a , b , cb){
 //     console.log(body);
 // })
 // dien tich hinh chu nhat (s = a * b)
-function dientich(a , b ){
-    return new Promise((res,rej) => {
-        nhan(a , b)
-        .then(tich => res(tich))
-        .catch(error => rej(error))
-    })
-}
+// promise
+// function dientich(a , b ){
+//     return new Promise((res,rej) => {
+//         nhan(a , b)
+//         .then(tich => res(tich))
+//         .catch(error => rej(error))
+//     })
+// }
+// async
+
+// async function dientich(a , b){
+//     try{
+//         const tich = await nhan(a , b)
+//         console.log(tich)
+//     }catch(e){
+//         console.log(e)
+//     }
+    
+// }
+
+
+
 // dientich( 5 , 6)
 // .then(dientich => console.log(dientich))
 // .catch(error => console.log(error))
 // chu vi hinh chu nhat(P = (A + B) X 2)
-function chuvi( a , b ){
-    return new Promise((res , rej) => {
-        cong(a , b )
-        .then(tong => nhan(tong , 2))
-        .then(chuvi => res(chuvi))
-        .catch(error => rej(error))
-    })
+// function chuvi( a , b ){
+//     return new Promise((res , rej) => {
+//         cong(a , b )
+//         .then(tong => nhan(tong , 2))
+//         .then(chuvi => res(chuvi))
+//         .catch(error => rej(error))
+//     })
+// }
+
+async function chuvi( a , b ){
+    const tong = await cong(a,b)
+    const tich = await nhan(tong,2)
+    console.log(tich)
 }
 
-chuvi( 5 , 10)
-.then(ketqua => console.log(ketqua))
-.catch(error => console.log(error))
+chuvi(5,10)
+// chuvi( 5 , 10)
+// .then(ketqua => console.log(ketqua))
+// .catch(error => console.log(error))
+
+
+
 
 
 
